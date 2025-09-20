@@ -1,0 +1,108 @@
+# 🛠️ Essential VLSI Tools Installation Guide
+
+Welcome to your first step in the RISC-V SoC design journey! 🚀  
+This guide provides clear, step-by-step instructions to install the fundamental tools required for digital design, simulation, and layout. Each section includes installation commands and a visual confirmation of a successful setup.
+
+---
+
+## 1. 🌟 Yosys – RTL Synthesis Tool
+
+Yosys is a powerful framework for Verilog RTL synthesis. It converts high-level hardware descriptions into gate-level netlists.
+
+### 🔧 Installation
+```bash
+sudo apt update
+sudo apt install yosys -y
+```
+
+### ✅ Verification
+Launch Yosys to verify the installation:
+```bash
+yosys
+```
+A successful installation will display the Yosys command prompt, as shown below:  
+![Yosys Verification](yosys.jpg)
+
+---
+
+## 2. 🧩 Icarus Verilog – Simulation Tool
+
+Icarus Verilog is a Verilog simulation and synthesis tool, used for compiling and simulating digital designs.
+
+### 🔧 Installation
+```bash
+sudo apt install iverilog -y
+```
+
+### ✅ Verification
+Run Icarus Verilog to check the installation:
+```bash
+iverilog
+```
+The output should confirm the tool is ready for use:  
+![Icarus Verilog Verification](iverilog.jpg)
+
+---
+
+## 3. 📈 GTKWave – Waveform Viewer
+
+GTKWave is a waveform viewer used for visualizing digital simulation outputs (VCD files).
+
+### 🔧 Installation
+```bash
+sudo apt install gtkwave -y
+```
+
+### ✅ Verification
+Start GTKWave to open its graphical interface:
+```bash
+gtkwave
+```
+The application window should appear as shown:  
+![GTKWave Verification](gtkwave.jpg)
+
+---
+
+## 4. ⚡ Ngspice – Circuit Simulator
+
+Ngspice is a mixed-level analog and digital circuit simulator, based on the SPICE platform.
+
+### 🔧 Installation
+```bash
+sudo apt install ngspice -y
+```
+
+### ✅ Verification
+Launch the Ngspice interactive console:
+```bash
+ngspice
+```
+You should see the Ngspice command prompt:  
+![Ngspice Verification](ngspice.jpg)
+
+---
+
+## 5. 🏰 Magic – VLSI Layout Tool
+
+Magic is a widely-used tool for VLSI layout design and verification, supporting design rule checking (DRC) and more.
+
+### 🔧 Installation
+```bash
+sudo apt install magic -y
+```
+
+### ✅ Verification
+Run Magic to start the layout editor:
+```bash
+magic
+```
+The layout window and toolbox will open:  
+![Magic VLSI Verification](magic.jpg)
+
+---
+
+## 🎯 Final Steps
+
+- ✅ **Verify Each Tool**: Launch each application as described to ensure everything is functioning correctly.
+- 🎉 **You're All Set!** With these tools installed, you have a complete environment for RTL design, simulation, and physical layout.
+- 🚀 **Happy Designing!** May your designs be efficient and your tapeouts successful.
