@@ -1,0 +1,66 @@
+VSD RISC-V Tapeout Program – Summary Document 
+
+Instructor: Kunal Ghosh (VLSI System Design – VSD) 
+ Focus Area: RISC-V Tapeout Flow and SoC-Level Integration 
+
+ 
+
+1. Chip Modeling and RTL-to-SoC Flow 
+
+Stage 1 – System Specification (C Model) 
+
+The design process begins with a system description written in C. 
+
+Functional verification and testbenches are also developed in C to validate specifications. 
+
+Stage 2 – RTL Design (Verilog Model) 
+
+Hardware functionality is expressed at the RTL level using Verilog. 
+
+At this stage, both the processor core and its associated peripherals/IPs are modeled in RTL. 
+
+Stage 3 – SoC Assembly & Netlist Generation 
+
+The processor, digital IPs, and analog blocks are integrated into a complete SoC. 
+
+Logic synthesis produces a gate-level netlist. 
+
+Analog components and third-party IPs are used as hardened blocks (Hard Macros). 
+
+ASIC Implementation (RTL → GDSII) 
+
+Standard steps: synthesis, floorplanning, placement, clock tree synthesis (CTS), and routing. 
+
+The final output is a GDSII layout verified with DRC and LVS checks. 
+
+ 
+
+2. SoC Tapeout and Real-World Usage 
+
+Stage 4 – Final SoC 
+
+The fabricated SoC operates at practical frequencies of ~100–130 MHz. 
+
+The same C testbench used at the start is reapplied for final silicon validation, ensuring design consistency. 
+
+Example Applications and Platforms: 
+
+Smart wearables (e.g., iWatch). 
+
+Arduino development boards. 
+
+Consumer electronics like TV panels. 
+
+Embedded controllers in home appliances (e.g., Air Conditioners). 
+
+ 
+
+3. Major Learnings 
+
+A single unified C testbench ties together all stages of design, maintaining consistency. 
+
+The structured flow: C Specification → RTL (Verilog) → SoC Integration → GDSII. 
+
+At each stage, functional and physical verification ensures correctness before moving forward. 
+
+RISC-V based SoCs are directly applicable in real-world consumer and industrial products.
