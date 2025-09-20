@@ -1,0 +1,45 @@
+Week 0 – Tools Installation and Test Run Summary  
+Focus Area: SFAL VLSI Tools Setup and OpenLane Flow Validation
+
+1. System preparation and environment  
+Stage 1 – Host and VM configuration  
+The development environment was prepared on Ubuntu 24.04 LTS. 
+System resources and package dependencies were verified and configured to support the VLSI toolchain and the Docker-based OpenLane flow.
+
+2. Tool installation and verification  
+Stage 2 – Toolset deployed  
+The required toolset was downloaded, built, installed and verified. 
+The installed tools are:
+1) Yosys, 
+2) Icarus Verilog (iverilog), 
+3) GTKWave, 
+4) ngspice, 
+5) Magic, 
+6) Docker, and 
+7) OpenLane. The SkyWater sky130 (sky130A) PDK was installed for use with OpenLane.
+
+Stage 3 – Verification procedure  
+Each tool was validated by running version checks or minimal smoke tests. 
+Yosys and Icarus Verilog were invoked to confirm synthesis and simulation readiness. 
+GTKWave and Magic were launched to verify GUI behavior. 
+ngspice returned the expected runtime output. 
+Docker was validated with docker run hello-world. 
+OpenLane was executed on the example design spm and ran through the flow producing signoff reports.
+
+3. Test run and observations  
+Stage 4 – OpenLane test run  
+The OpenLane test run completed and generated signoff reports. 
+A set of non-fatal warnings was recorded during signoff, namely power-grid scaling, a few blackboxed cells during STA, VSRC_LOC_FILES not defined, and some max-fanout checks. 
+These warnings are documented for follow-up optimization but do not invalidate the successful installation or the functional test.
+
+4. Proof and repository evidence  
+Screenshots, terminal logs and test artifacts have been collected and placed in the repository under Week 0 -> Images. 
+These files provide visual evidence of tool versions, system checks, Docker verification, the OpenLane run log and the generated reports.
+
+5. Key takeaways  
+The VLSI toolchain is installed and integrated. 
+The successful OpenLane test run validates synthesis, simulation, waveform viewing, circuit simulation, layout tools and the OpenLane physical design flow. 
+The environment is ready for design iterations and further optimization. Follow-up work will address the signoff warnings for signoff-level quality.
+
+Repository path for evidence  
+Week 0 -> Images
