@@ -1,7 +1,3 @@
-Of course! Here is the text formatted and structured for a GitHub README.md file, combining your repository's purpose with your personal narrative.
-
-***
-
 # RTL to GDSII Flow: SFAL-VSD Program
 
 This repository documents my step-by-step journey through the complete RTL-to-GDSII flow for digital design, as part of the **VSD RISC-V SoC Tapeout Program**. It serves as a log for tool installations, setup configurations, workflow verification, and project progress.
