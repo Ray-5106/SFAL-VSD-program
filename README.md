@@ -14,12 +14,9 @@ This is far more than a structured course; it is a collective movement, uniting 
 Each week, I will be conquering new parts of the design flow—from crafting RTL designs and synthesizing logic to tackling the intricate challenges of physical layout.
 Every step brings us closer to that ultimate milestone: a successful tapeout ready for fabrication.
 
-### Current Progress: Week 0 ✅
-**Focus:** Foundation & Setup
-This week involved configuring the essential open-source toolchain and laying the groundwork for this deep dive into silicon.
-*   Proof of Installation: All required EDA tools have been successfully installed and verified.
-*   Environment Setup: The project environment and dependencies are configured for a seamless workflow.
-
+### Current Progress: 
+ Week 0 ✅
+ Week 1 ✅
 ---
 
 ## Project Overview & Goals
